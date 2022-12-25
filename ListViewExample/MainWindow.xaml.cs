@@ -23,6 +23,13 @@ namespace ListViewExample
         public MainWindow()
         {
             InitializeComponent();
+
+            CameraListView.ItemsSource= new List<string>()
+            {
+                "Camera_1",
+                "Camera_2",
+                "Camera_3"
+            };
         }
     }
 }
