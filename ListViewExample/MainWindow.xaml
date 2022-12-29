@@ -10,7 +10,16 @@
         <local:Cameras />
     </Window.DataContext>    
     <Grid>
-        <ListView Margin="10" ItemsSource="{Binding CameraList}" DisplayMemberPath="Manufacturer">
+        <ListView Margin="10" ItemsSource="{Binding CameraList}">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Manufacturer" DisplayMemberBinding="{Binding Manufacturer}" />
+                        <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Type}"/>
+                        <GridViewColumn Header="Model" DisplayMemberBinding="{Binding Model}" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
         </ListView>
     </Grid>
 </Window>
