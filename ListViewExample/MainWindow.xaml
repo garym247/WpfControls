@@ -10,7 +10,7 @@
         <local:Cameras />
     </Window.DataContext>    
     <Grid>
-        <ListView Margin="10" ItemsSource="{Binding CameraList}">
+        <ListView Margin="10" ItemsSource="{Binding CameraList}" DisplayMemberPath="Manufacturer">
         </ListView>
     </Grid>
 </Window>
